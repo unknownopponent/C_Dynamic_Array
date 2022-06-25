@@ -22,15 +22,15 @@ void da_release(DynamicArray* dynamic_array);
 /* return the array pointer */
 void* da_iterator(DynamicArray* dynamic_array);
 
-/* return 0 if failled */
+/* return 0 if success */
 char da_insert(DynamicArray* dynamic_array, size_t index, size_t count);
 
 void da_remove(DynamicArray* dynamic_array, size_t index, size_t count);
 
-/* return 0 if failled */
+/* return 0 if success */
 char da_reserve(DynamicArray* dynamic_array, size_t size);
 
-/* return 0 if failled */
+/* return 0 if success */
 char da_shrink_to_fit(DynamicArray* dynamic_array);
 
 inline void da_init(DynamicArray* dynamic_array, size_t element_size)
